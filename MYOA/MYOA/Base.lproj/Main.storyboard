@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k5w-dB-QdI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QoK-HB-2Bw">
+            <objects>
+                <navigationController id="k5w-dB-QdI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X8B-um-5oq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J1K-cb-Iei" kind="relationship" relationship="rootViewController" id="rC9-Ud-UJd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrA-db-WLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="338"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="34E-a7-l7I">
+            <objects>
+                <viewController id="J1K-cb-Iei" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTx-s5-Pp1"/>
+                        <viewControllerLayoutGuide type="bottom" id="K0i-aW-7dH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ckm-Cn-EBC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="It's pouring heavy rain outside. An eerie feeling sets in when the power goes off. You hear some sound coming from upstairs and" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Maq-jB-aFQ">
+                                <rect key="frame" x="39" y="112" width="520" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtv-Tu-1S2">
+                                <rect key="frame" x="20" y="303" width="560" height="30"/>
+                                <state key="normal" title="You grab a torch and go upstairs"/>
+                                <connections>
+                                    <segue destination="2aQ-Gb-xVs" kind="show" id="4FK-NB-zrK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoE-Hk-Lfx">
+                                <rect key="frame" x="20" y="399" width="560" height="30"/>
+                                <state key="normal" title="You call your best friend to join you as you're afraid"/>
+                                <connections>
+                                    <segue destination="a7Z-P7-ict" kind="show" id="5uy-qJ-kyE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xtv-Tu-1S2" firstAttribute="top" secondItem="Maq-jB-aFQ" secondAttribute="bottom" constant="63" id="1uL-uk-0C9"/>
+                            <constraint firstItem="PoE-Hk-Lfx" firstAttribute="top" secondItem="xtv-Tu-1S2" secondAttribute="bottom" constant="66" id="23b-MN-yyh"/>
+                            <constraint firstItem="Maq-jB-aFQ" firstAttribute="leading" secondItem="ckm-Cn-EBC" secondAttribute="leadingMargin" constant="19" id="2rE-0d-yGl"/>
+                            <constraint firstItem="K0i-aW-7dH" firstAttribute="top" secondItem="PoE-Hk-Lfx" secondAttribute="bottom" constant="171" id="99b-Jp-sb7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PoE-Hk-Lfx" secondAttribute="trailing" id="FZ0-iY-Uf0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xtv-Tu-1S2" secondAttribute="trailing" id="QeB-by-hOt"/>
+                            <constraint firstItem="PoE-Hk-Lfx" firstAttribute="top" secondItem="xtv-Tu-1S2" secondAttribute="bottom" constant="66" id="Tps-aD-sln"/>
+                            <constraint firstItem="K0i-aW-7dH" firstAttribute="top" secondItem="Maq-jB-aFQ" secondAttribute="bottom" constant="360" id="kLM-Vm-CqN"/>
+                            <constraint firstItem="Maq-jB-aFQ" firstAttribute="top" secondItem="aTx-s5-Pp1" secondAttribute="bottom" constant="48" id="kOk-e5-ztB"/>
+                            <constraint firstItem="PoE-Hk-Lfx" firstAttribute="leading" secondItem="ckm-Cn-EBC" secondAttribute="leadingMargin" id="kQE-xT-fNG"/>
+                            <constraint firstItem="xtv-Tu-1S2" firstAttribute="leading" secondItem="ckm-Cn-EBC" secondAttribute="leadingMargin" id="pq0-Hf-wpw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Maq-jB-aFQ" secondAttribute="trailing" constant="21" id="xyc-gJ-B3j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S5K-1m-vTH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p42-lh-EbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="338"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ine-Ci-Rjs">
+            <objects>
+                <viewController id="2aQ-Gb-xVs" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sDF-Z2-ryu"/>
+                        <viewControllerLayoutGuide type="bottom" id="uAO-oZ-3F1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q60-9F-6Ra">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The bathroom is flooding because of a clogged wash basin." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GoP-hH-KgQ">
+                                <rect key="frame" x="39" y="112" width="520" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5b-mQ-d43">
+                                <rect key="frame" x="20" y="303" width="560" height="30"/>
+                                <state key="normal" title="Turn off the tap quickly and hear someone behind you."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-L4-axW">
+                                <rect key="frame" x="20" y="399" width="560" height="30"/>
+                                <state key="normal" title="You run downstairs immediately and call the police!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3rF-L4-axW" firstAttribute="top" secondItem="H5b-mQ-d43" secondAttribute="bottom" constant="66" id="GQj-AN-zQO"/>
+                            <constraint firstItem="H5b-mQ-d43" firstAttribute="leading" secondItem="Q60-9F-6Ra" secondAttribute="leadingMargin" id="HaC-Jk-mqe"/>
+                            <constraint firstItem="GoP-hH-KgQ" firstAttribute="top" secondItem="sDF-Z2-ryu" secondAttribute="bottom" constant="48" id="NGt-iR-Omj"/>
+                            <constraint firstItem="3rF-L4-axW" firstAttribute="leading" secondItem="Q60-9F-6Ra" secondAttribute="leadingMargin" id="S52-LP-xbz"/>
+                            <constraint firstItem="H5b-mQ-d43" firstAttribute="top" secondItem="GoP-hH-KgQ" secondAttribute="bottom" constant="63" id="YkO-ec-izf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H5b-mQ-d43" secondAttribute="trailing" id="Z2c-Ks-K93"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GoP-hH-KgQ" secondAttribute="trailing" constant="21" id="ZiC-ze-02h"/>
+                            <constraint firstItem="uAO-oZ-3F1" firstAttribute="top" secondItem="GoP-hH-KgQ" secondAttribute="bottom" constant="360" id="b87-GB-3g1"/>
+                            <constraint firstItem="uAO-oZ-3F1" firstAttribute="top" secondItem="3rF-L4-axW" secondAttribute="bottom" constant="171" id="eJD-2u-LVr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3rF-L4-axW" secondAttribute="trailing" id="hju-UV-QBF"/>
+                            <constraint firstItem="GoP-hH-KgQ" firstAttribute="leading" secondItem="Q60-9F-6Ra" secondAttribute="leadingMargin" constant="19" id="ipZ-sf-pEY"/>
+                            <constraint firstItem="3rF-L4-axW" firstAttribute="top" secondItem="H5b-mQ-d43" secondAttribute="bottom" constant="66" id="kc6-KM-Ufg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZMV-8t-gcn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCK-lT-ghW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1443" y="-1"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mi7-pU-Gsa">
+            <objects>
+                <viewController id="a7Z-P7-ict" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aaL-8n-3if"/>
+                        <viewControllerLayoutGuide type="bottom" id="Els-Hl-2b4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YOy-Gc-6Pa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Both of you head upstairs and notice the bathroom is flooding, she runs to turn the tap off." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RKY-5e-ESb">
+                                <rect key="frame" x="39" y="112" width="520" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhe-87-0GS">
+                                <rect key="frame" x="20" y="303" width="560" height="30"/>
+                                <state key="normal" title="You stop her before she enters the bathroom, and call the police."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlx-3g-NhU">
+                                <rect key="frame" x="20" y="399" width="560" height="30"/>
+                                <state key="normal" title="Turn off the tap quickly and hear someone behind you."/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lhe-87-0GS" firstAttribute="leading" secondItem="YOy-Gc-6Pa" secondAttribute="leadingMargin" id="0b2-LM-QkK"/>
+                            <constraint firstItem="qlx-3g-NhU" firstAttribute="leading" secondItem="YOy-Gc-6Pa" secondAttribute="leadingMargin" id="FRP-CF-SpM"/>
+                            <constraint firstItem="RKY-5e-ESb" firstAttribute="top" secondItem="aaL-8n-3if" secondAttribute="bottom" constant="48" id="FrQ-pI-m6E"/>
+                            <constraint firstItem="qlx-3g-NhU" firstAttribute="top" secondItem="Lhe-87-0GS" secondAttribute="bottom" constant="66" id="Gle-qE-l5L"/>
+                            <constraint firstItem="RKY-5e-ESb" firstAttribute="leading" secondItem="YOy-Gc-6Pa" secondAttribute="leadingMargin" constant="19" id="IOC-OJ-ubF"/>
+                            <constraint firstItem="qlx-3g-NhU" firstAttribute="top" secondItem="Lhe-87-0GS" secondAttribute="bottom" constant="66" id="WTC-9J-I0b"/>
+                            <constraint firstItem="Els-Hl-2b4" firstAttribute="top" secondItem="qlx-3g-NhU" secondAttribute="bottom" constant="171" id="kTr-N6-Cf7"/>
+                            <constraint firstItem="Lhe-87-0GS" firstAttribute="top" secondItem="RKY-5e-ESb" secondAttribute="bottom" constant="63" id="mz0-uF-QDo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lhe-87-0GS" secondAttribute="trailing" id="qLB-o0-r1s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qlx-3g-NhU" secondAttribute="trailing" id="sVX-LI-lBr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RKY-5e-ESb" secondAttribute="trailing" constant="21" id="wIi-oB-smo"/>
+                            <constraint firstItem="Els-Hl-2b4" firstAttribute="top" secondItem="RKY-5e-ESb" secondAttribute="bottom" constant="360" id="xnh-ZJ-oyE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pxh-ot-EIg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqW-yO-n1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1443" y="826"/>
+        </scene>
+    </scenes>
+</document>
